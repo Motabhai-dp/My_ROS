@@ -1,0 +1,3 @@
+[console_scripts]
+omni_kinematics = r_bot.omni_kinematics:main
+

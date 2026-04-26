@@ -151,30 +151,6 @@
     <xacro:rim_macro name="right" xyz="0.03600001399230441 -0.06235382099401676 -0.001"  rpy="1.570796326794896 0 0.523599"/>
     <xacro:rim_macro name="back" xyz="-0.072 0 0" rpy="1.570796326794896 0 1.570796326794896"/>
 
-     <!-- <gazebo>
-        <plugin
-        filename="ignition-gazebo-velocity-control-system"
-        name="gz::sim::systems::VelocityControl">
-        </plugin>
-
-        <plugin filename="ignition-gazebo-joint-state-publisher-system"
-        name="ignition::gazebo::systems::JointStatePublisher">
-        </plugin>
-
-        ign topic -t "/model/{bot_name}/joint/arm_base/cmd_vel" -m ignition.msgs.Double -p "data: 10.0" (Remember to comment this new uncommenting the gazebo code)
-        <plugin filename="ignition-gazebo-joint-controller-system"
-        name="gz::sim::systems::JointController">
-        <joint_name>arm_base</joint_name>
-        </plugin>
-
-        <plugin filename="ignition-gazebo-joint-controller-system"
-        name="gz::sim::systems::JointController">
-        <joint_name>arm_elbow</joint_name>
-        </plugin>
-
-    </gazebo> -->
-
-
     <ros2_control name="RobotSystem" type="system">
         <hardware>
             <plugin>gazebo_ros2_control/GazeboSystem</plugin>
@@ -182,22 +158,27 @@
 
         <joint name="rim_left_joint">
             <command_interface name="velocity"/>
+            <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
 
         <joint name="rim_right_joint">
             <command_interface name="velocity"/>
+            <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
 
         <joint name="rim_back_joint">
             <command_interface name="velocity"/>
+            <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
     </ros2_control>
 
-
     <gazebo>
-        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so"/>
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+            <parameters>/home/deepanshu/My_ROS/src/r_bot/config/Control.yaml</parameters>
+        </plugin>
     </gazebo>
+
 </robot>

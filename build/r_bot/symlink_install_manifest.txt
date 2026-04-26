@@ -1,5 +1,6 @@
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch/control.launch.py
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch/launch_sim.launch.py
+/home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch/new.py
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch/rsp.launch.py
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/controllers.yaml
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/gui.config
