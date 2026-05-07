@@ -1,3 +1,6 @@
+source;share/r_bot/hook/cmake_prefix_path.ps1
+source;share/r_bot/hook/cmake_prefix_path.dsv
+source;share/r_bot/hook/cmake_prefix_path.sh
 source;share/r_bot/hook/path.ps1
 source;share/r_bot/hook/path.dsv
 source;share/r_bot/hook/path.sh
@@ -7,9 +10,8 @@ source;share/r_bot/hook/pythonpath.sh
 source;share/r_bot/hook/pythonscriptspath.ps1
 source;share/r_bot/hook/pythonscriptspath.dsv
 source;share/r_bot/hook/pythonscriptspath.sh
-source;share/r_bot/hook/ament_prefix_path.ps1
-source;share/r_bot/hook/ament_prefix_path.dsv
-source;share/r_bot/hook/ament_prefix_path.sh
-source;../../build/r_bot/share/r_bot/hook/pythonpath_develop.ps1
-source;../../build/r_bot/share/r_bot/hook/pythonpath_develop.dsv
-source;../../build/r_bot/share/r_bot/hook/pythonpath_develop.sh
+source;share/r_bot/local_setup.bash
+source;share/r_bot/local_setup.dsv
+source;share/r_bot/local_setup.ps1
+source;share/r_bot/local_setup.sh
+source;share/r_bot/local_setup.zsh

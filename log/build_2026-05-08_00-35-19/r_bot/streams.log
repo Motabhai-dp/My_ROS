@@ -1,0 +1,56 @@
+[0.006s] Invoking command in '/home/deepanshu/My_ROS/build/r_bot': /usr/bin/cmake /home/deepanshu/My_ROS/src/r_bot -DCMAKE_INSTALL_PREFIX=/home/deepanshu/My_ROS/install/r_bot
+[0.128s] -- The C compiler identification is GNU 11.4.0
+[0.258s] -- The CXX compiler identification is GNU 11.4.0
+[0.264s] -- Detecting C compiler ABI info
+[0.325s] -- Detecting C compiler ABI info - done
+[0.333s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.334s] -- Detecting C compile features
+[0.335s] -- Detecting C compile features - done
+[0.338s] -- Detecting CXX compiler ABI info
+[0.402s] -- Detecting CXX compiler ABI info - done
+[0.406s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.406s] -- Detecting CXX compile features
+[0.406s] -- Detecting CXX compile features - done
+[0.409s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.520s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.604s] Error parsing '/home/deepanshu/My_ROS/src/r_bot/package.xml':
+[0.630s] Traceback (most recent call last):
+[0.631s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[0.631s]     root = dom.parseString(data)
+[0.631s]   File "/usr/lib/python3.10/xml/dom/minidom.py", line 1995, in parseString
+[0.632s]     return expatbuilder.parseString(string)
+[0.632s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 925, in parseString
+[0.633s]     return builder.parseString(string)
+[0.633s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 223, in parseString
+[0.633s]     parser.Parse(string, True)
+[0.633s] xml.parsers.expat.ExpatError: not well-formed (invalid token): line 1, column 0
+[0.633s] 
+[0.633s] During handling of the above exception, another exception occurred:
+[0.633s] 
+[0.633s] Traceback (most recent call last):
+[0.633s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.634s]     main()
+[0.634s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.634s]     raise e
+[0.634s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.634s]     package = parse_package_string(
+[0.634s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[0.634s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[0.634s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/deepanshu/My_ROS/src/r_bot/package.xml':
+[0.634s] The manifest contains invalid XML:
+[0.634s] not well-formed (invalid token): line 1, column 0
+[0.642s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.642s]   execute_process(/usr/bin/python3
+[0.642s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.642s]   /home/deepanshu/My_ROS/src/r_bot/package.xml
+[0.642s]   /home/deepanshu/My_ROS/build/r_bot/ament_cmake_core/package.cmake) returned
+[0.642s]   error code 1
+[0.642s] Call Stack (most recent call first):
+[0.642s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.642s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[0.642s]   CMakeLists.txt:15 (ament_package)
+[0.643s] 
+[0.643s] [0m
+[0.643s] -- Configuring incomplete, errors occurred!
+[0.643s] See also "/home/deepanshu/My_ROS/build/r_bot/CMakeFiles/CMakeOutput.log".
+[0.645s] Invoked command in '/home/deepanshu/My_ROS/build/r_bot' returned '1': /usr/bin/cmake /home/deepanshu/My_ROS/src/r_bot -DCMAKE_INSTALL_PREFIX=/home/deepanshu/My_ROS/install/r_bot

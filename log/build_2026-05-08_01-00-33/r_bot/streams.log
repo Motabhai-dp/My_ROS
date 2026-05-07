@@ -1,0 +1,50 @@
+[0.007s] Invoking command in '/home/deepanshu/My_ROS/build/r_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/deepanshu/My_ROS/build/r_bot -- -j16 -l16
+[0.040s] Invoked command in '/home/deepanshu/My_ROS/build/r_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/deepanshu/My_ROS/build/r_bot -- -j16 -l16
+[0.050s] Invoking command in '/home/deepanshu/My_ROS/build/r_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/deepanshu/My_ROS/build/r_bot
+[0.056s] -- Install configuration: ""
+[0.056s] -- Execute custom install script
+[0.056s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch/launch_sim.launch.py
+[0.056s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch/new.py
+[0.056s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch/rsp.launch.py
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch/teleop.py
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/Control.yaml
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/controllers.yaml
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/gui.config
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/ros_gz_bridge.yaml
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/world.config
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/inertial_macros.xacro
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/lidar.xacro
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/arm_elbow.dae
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/arm_link.dae
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/base.stl
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/bot.dae
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/bot_marker.png
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/hb_crystal.dae
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/hb_frostbite.dae
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/hb_glacio.dae
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/marker_0.png
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/marker_2.png
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/marker_4.png
+[0.057s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/rim.stl
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/roller.stl
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/wheel.stl
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/wheels.dae
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/new_core.xacro
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/original_core_file.xacro
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/robot.urdf.xacro
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/ament_index/resource_index/package_run_dependencies/r_bot
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/ament_index/resource_index/parent_prefix_path/r_bot
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/environment/ament_prefix_path.sh
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/environment/ament_prefix_path.dsv
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/environment/path.sh
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/environment/path.dsv
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/local_setup.bash
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/local_setup.sh
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/local_setup.zsh
+[0.058s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/local_setup.dsv
+[0.058s] -- Symlinking: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/package.dsv
+[0.064s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/ament_index/resource_index/packages/r_bot
+[0.064s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/cmake/r_botConfig.cmake
+[0.064s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/cmake/r_botConfig-version.cmake
+[0.064s] -- Up-to-date symlink: /home/deepanshu/My_ROS/install/r_bot/share/r_bot/package.xml
+[0.065s] Invoked command in '/home/deepanshu/My_ROS/build/r_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/deepanshu/My_ROS/build/r_bot

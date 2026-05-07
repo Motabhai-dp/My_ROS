@@ -78,11 +78,11 @@ _colcon_package_sh_source_script() {
 }
 
 # source sh hooks
+_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/r_bot/hook/cmake_prefix_path.sh"
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/r_bot/hook/path.sh"
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/r_bot/hook/pythonpath.sh"
 _colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/r_bot/hook/pythonscriptspath.sh"
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/r_bot/hook/ament_prefix_path.sh"
-_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/../../build/r_bot/share/r_bot/hook/pythonpath_develop.sh"
+_colcon_package_sh_source_script "$COLCON_CURRENT_PREFIX/share/r_bot/local_setup.sh"
 
 unset _colcon_package_sh_source_script
 unset COLCON_CURRENT_PREFIX
