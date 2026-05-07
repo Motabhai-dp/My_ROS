@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import math
 
 import rclpy
@@ -14,17 +12,17 @@ class OmniKinematics(Node):
     def __init__(self):
         super().__init__('omni_kinematics')
 
-        # ================= ROBOT PARAMETERS =================
-        # Must match URDF
-        self.r = 0.03      # wheel radius
-        self.L = 0.072     # distance from center to wheel
+        # Robot parameters
+        self.r = 0.016   # wheel radius
+        self.L = 0.072   # distance from center to wheel
+        omega = 0
 
-        # Correct wheel angles from URDF (radians)
-        self.theta_left  = -math.pi / 6    # -30°
-        self.theta_right =  math.pi / 6    # +30°
-        self.theta_back  =  math.pi / 2    # +90°
+        # Wheel angles (verified 120° layout)
+        self.theta_left  = math.radians(120)
+        self.theta_right = math.radians(0)
+        self.theta_back  = math.radians(240)
 
-        # ================= ROS INTERFACES =================
+        # Subscriber
         self.sub = self.create_subscription(
             Twist,
             '/cmd_vel',
@@ -32,40 +30,39 @@ class OmniKinematics(Node):
             10
         )
 
+        # Publisher
         self.pub = self.create_publisher(
             Float64MultiArray,
             '/forward_velocity_controller/commands',
             10
         )
 
-    # ================= KINEMATICS =================
     def compute(self, vx, vy, omega, theta):
-        return (
-            -math.sin(theta) * vx +
-             math.cos(theta) * vy +
-             self.L * omega
-        ) / self.r
+        return (-math.sin(theta) * vx +
+                math.cos(theta) * vy +
+                self.L * omega) / self.r
 
-    # ================= CALLBACK =================
     def cmd_callback(self, msg):
-        vx = msg.linear.x
-        vy = msg.linear.y
+        # --- FRAME ALIGNMENT FIX ---
+        # ensures "i" key = forward in your view
+        vx = msg.linear.y
+        vy = -msg.linear.x
         omega = msg.angular.z
 
-        # Compute wheel speeds
+        # Compute wheel velocities
         w_left  = self.compute(vx, vy, omega, self.theta_left)
         w_right = self.compute(vx, vy, omega, self.theta_right)
         w_back  = self.compute(vx, vy, omega, self.theta_back)
 
-        # Publish
+        # Publish in correct order
         out = Float64MultiArray()
         out.data = [w_left, w_right, w_back]
 
         self.pub.publish(out)
 
 
-def main():
-    rclpy.init()
+def main(args=None):
+    rclpy.init(args=args)
     node = OmniKinematics()
     rclpy.spin(node)
     node.destroy_node()

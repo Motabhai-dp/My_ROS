@@ -1,0 +1,27 @@
+running develop
+running egg_info
+creating r_bot.egg-info
+writing r_bot.egg-info/PKG-INFO
+writing dependency_links to r_bot.egg-info/dependency_links.txt
+writing entry points to r_bot.egg-info/entry_points.txt
+writing requirements to r_bot.egg-info/requires.txt
+writing top-level names to r_bot.egg-info/top_level.txt
+writing manifest file 'r_bot.egg-info/SOURCES.txt'
+reading manifest file 'r_bot.egg-info/SOURCES.txt'
+writing manifest file 'r_bot.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/deepanshu/My_ROS/install/r_bot/lib/python3.10/site-packages/r-bot.egg-link (link to .)
+Installing omni_kinematics script to /home/deepanshu/My_ROS/install/r_bot/bin
+
+Installed /home/deepanshu/My_ROS/build/r_bot
+running symlink_data
+creating /home/deepanshu/My_ROS/install/r_bot/share/ament_index
+creating /home/deepanshu/My_ROS/install/r_bot/share/ament_index/resource_index
+creating /home/deepanshu/My_ROS/install/r_bot/share/ament_index/resource_index/packages
+symbolically linking /home/deepanshu/My_ROS/build/r_bot/resource/r_bot -> /home/deepanshu/My_ROS/install/r_bot/share/ament_index/resource_index/packages
+symbolically linking /home/deepanshu/My_ROS/build/r_bot/package.xml -> /home/deepanshu/My_ROS/install/r_bot/share/r_bot
+creating /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch
+symbolically linking /home/deepanshu/My_ROS/build/r_bot/launch/new.py -> /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch
+symbolically linking /home/deepanshu/My_ROS/build/r_bot/launch/launch_sim.launch.py -> /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch
+symbolically linking /home/deepanshu/My_ROS/build/r_bot/launch/teleop.py -> /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch
+symbolically linking /home/deepanshu/My_ROS/build/r_bot/launch/rsp.launch.py -> /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch

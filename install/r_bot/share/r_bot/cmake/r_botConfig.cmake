@@ -1,1 +1,0 @@
-/home/deepanshu/My_ROS/build/r_bot/ament_cmake_core/r_botConfig.cmake

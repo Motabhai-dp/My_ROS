@@ -1,0 +1,29 @@
+[0.327s] Invoking command in '/home/deepanshu/My_ROS/build/r_bot': PYTHONPATH=/home/deepanshu/My_ROS/build/r_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/deepanshu/My_ROS/install/r_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/deepanshu/My_ROS/build/r_bot/build --no-deps symlink_data
+[0.468s] running develop
+[0.551s] running egg_info
+[0.551s] creating r_bot.egg-info
+[0.551s] writing r_bot.egg-info/PKG-INFO
+[0.551s] writing dependency_links to r_bot.egg-info/dependency_links.txt
+[0.551s] writing entry points to r_bot.egg-info/entry_points.txt
+[0.551s] writing requirements to r_bot.egg-info/requires.txt
+[0.551s] writing top-level names to r_bot.egg-info/top_level.txt
+[0.551s] writing manifest file 'r_bot.egg-info/SOURCES.txt'
+[0.552s] reading manifest file 'r_bot.egg-info/SOURCES.txt'
+[0.552s] writing manifest file 'r_bot.egg-info/SOURCES.txt'
+[0.553s] running build_ext
+[0.553s] Creating /home/deepanshu/My_ROS/install/r_bot/lib/python3.10/site-packages/r-bot.egg-link (link to .)
+[0.554s] Installing omni_kinematics script to /home/deepanshu/My_ROS/install/r_bot/bin
+[0.554s] 
+[0.554s] Installed /home/deepanshu/My_ROS/build/r_bot
+[0.554s] running symlink_data
+[0.554s] creating /home/deepanshu/My_ROS/install/r_bot/share/ament_index
+[0.554s] creating /home/deepanshu/My_ROS/install/r_bot/share/ament_index/resource_index
+[0.554s] creating /home/deepanshu/My_ROS/install/r_bot/share/ament_index/resource_index/packages
+[0.554s] symbolically linking /home/deepanshu/My_ROS/build/r_bot/resource/r_bot -> /home/deepanshu/My_ROS/install/r_bot/share/ament_index/resource_index/packages
+[0.554s] symbolically linking /home/deepanshu/My_ROS/build/r_bot/package.xml -> /home/deepanshu/My_ROS/install/r_bot/share/r_bot
+[0.554s] creating /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch
+[0.554s] symbolically linking /home/deepanshu/My_ROS/build/r_bot/launch/new.py -> /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch
+[0.554s] symbolically linking /home/deepanshu/My_ROS/build/r_bot/launch/launch_sim.launch.py -> /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch
+[0.554s] symbolically linking /home/deepanshu/My_ROS/build/r_bot/launch/teleop.py -> /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch
+[0.554s] symbolically linking /home/deepanshu/My_ROS/build/r_bot/launch/rsp.launch.py -> /home/deepanshu/My_ROS/install/r_bot/share/r_bot/launch
+[0.569s] Invoked command in '/home/deepanshu/My_ROS/build/r_bot' returned '0': PYTHONPATH=/home/deepanshu/My_ROS/build/r_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/deepanshu/My_ROS/install/r_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/deepanshu/My_ROS/build/r_bot/build --no-deps symlink_data

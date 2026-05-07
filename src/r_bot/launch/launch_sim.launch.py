@@ -13,6 +13,7 @@ def generate_launch_description():
 
     package_name = 'r_bot'
 
+    # ================= ROBOT STATE PUBLISHER =================
     rsp = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
@@ -21,9 +22,12 @@ def generate_launch_description():
                 'rsp.launch.py'
             )
         ),
-        launch_arguments={'use_sim_time': 'true'}.items()
+        launch_arguments={
+            'use_sim_time': 'true'
+        }.items()
     )
 
+    # ================= GAZEBO =================
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
@@ -34,6 +38,7 @@ def generate_launch_description():
         )
     )
 
+    # ================= SPAWN ROBOT =================
     spawn_entity = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
@@ -44,41 +49,54 @@ def generate_launch_description():
         output='screen'
     )
 
-    # run your python file directly (bypass setup.py)
-    omni_node = ExecuteProcess(
-        cmd=[
-            'python3',
-            '/home/deepanshu/My_ROS/src/r_bot/r_bot/omni_kinematics.py'
-        ],
-        output='screen'
-    )
-
+    # ================= LOAD CONTROLLERS =================
     load_controllers = TimerAction(
         period=5.0,
         actions=[
+
             ExecuteProcess(
                 cmd=[
-                    'ros2', 'control', 'load_controller',
-                    '--set-state', 'active',
+                    'ros2',
+                    'control',
+                    'load_controller',
+                    '--set-state',
+                    'active',
                     'joint_state_broadcaster'
                 ],
                 output='screen'
             ),
+
             ExecuteProcess(
                 cmd=[
-                    'ros2', 'control', 'load_controller',
-                    '--set-state', 'active',
+                    'ros2',
+                    'control',
+                    'load_controller',
+                    '--set-state',
+                    'active',
                     'forward_velocity_controller'
                 ],
                 output='screen'
             )
+
         ]
     )
 
+    # ================= HOLONOMIC KEYBOARD CONTROL =================
+    omni_keyboard_node = ExecuteProcess(
+        cmd=[
+            'python3',
+            '/home/deepanshu/My_ROS/src/r_bot/r_bot/omni_kinematics.py'
+        ],
+        output='screen',
+        emulate_tty=True
+    )
+
     return LaunchDescription([
+
         rsp,
         gazebo,
         spawn_entity,
         load_controllers,
-        omni_node
+        omni_keyboard_node
+
     ])

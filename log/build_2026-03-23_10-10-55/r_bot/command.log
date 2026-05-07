@@ -1,4 +1,0 @@
-Invoking command in '/home/deepanshu/My_ROS/build/r_bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/deepanshu/My_ROS/build/r_bot -- -j16 -l16
-Invoked command in '/home/deepanshu/My_ROS/build/r_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/deepanshu/My_ROS/build/r_bot -- -j16 -l16
-Invoking command in '/home/deepanshu/My_ROS/build/r_bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/deepanshu/My_ROS/build/r_bot
-Invoked command in '/home/deepanshu/My_ROS/build/r_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/deepanshu/My_ROS/build/r_bot
