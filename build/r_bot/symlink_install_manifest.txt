@@ -5,6 +5,7 @@
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/Control.yaml
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/controllers.yaml
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/gui.config
+/home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/mapper_params_online_async.yaml
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/ros_gz_bridge.yaml
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/world.config
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/camera.xacro

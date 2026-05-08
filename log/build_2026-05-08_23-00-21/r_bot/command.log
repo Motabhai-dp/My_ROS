@@ -1,0 +1,6 @@
+Invoking command in '/home/deepanshu/My_ROS/build/r_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/deepanshu/My_ROS/src/r_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/deepanshu/My_ROS/install/r_bot
+Invoked command in '/home/deepanshu/My_ROS/build/r_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/deepanshu/My_ROS/src/r_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/deepanshu/My_ROS/install/r_bot
+Invoking command in '/home/deepanshu/My_ROS/build/r_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/deepanshu/My_ROS/build/r_bot -- -j16 -l16
+Invoked command in '/home/deepanshu/My_ROS/build/r_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/deepanshu/My_ROS/build/r_bot -- -j16 -l16
+Invoking command in '/home/deepanshu/My_ROS/build/r_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/deepanshu/My_ROS/build/r_bot
+Invoked command in '/home/deepanshu/My_ROS/build/r_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/deepanshu/My_ROS/build/r_bot
