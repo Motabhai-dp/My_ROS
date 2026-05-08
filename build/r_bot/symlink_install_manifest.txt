@@ -7,6 +7,8 @@
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/gui.config
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/ros_gz_bridge.yaml
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/config/world.config
+/home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/camera.xacro
+/home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/depth_camera.xacro
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/inertial_macros.xacro
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/lidar.xacro
 /home/deepanshu/My_ROS/install/r_bot/share/r_bot/description/meshes/arm_elbow.dae
